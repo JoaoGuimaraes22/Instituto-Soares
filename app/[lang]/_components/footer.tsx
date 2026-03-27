@@ -71,9 +71,13 @@ export default function Footer({ dict }: { dict: FooterDict }) {
             <p className="mb-4 text-xs font-semibold uppercase tracking-widest text-white/30">
               {dict.hoursLabel}
             </p>
-            <p className="text-sm leading-relaxed text-white/50 whitespace-pre-line">
-              {dict.hours}
-            </p>
+            <div className="flex flex-col gap-1.5 text-sm text-white/50">
+              {dict.hours.split(",").map((line, i) => (
+                <span key={i} className="leading-relaxed">
+                  {line.trim()}
+                </span>
+              ))}
+            </div>
           </div>
 
           {/* Contact */}

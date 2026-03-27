@@ -24,6 +24,10 @@ export default function Hours({ dict }: { dict: HoursDict }) {
   const ref = useRef<HTMLElement>(null);
   const inView = useInView(ref, { once: true, margin: "-80px" });
 
+  // Schedule is Mon(0)–Sun(6); JS getDay() is Sun(0)–Sat(6)
+  const jsDay = new Date().getDay();
+  const todayIndex = jsDay === 0 ? 6 : jsDay - 1;
+
   const fadeUp = (delay = 0) => ({
     initial: { opacity: 0, y: 24 },
     animate: inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 24 },
@@ -61,12 +65,25 @@ export default function Hours({ dict }: { dict: HoursDict }) {
               {dict.hoursLabel}
             </h3>
             <div className="divide-y divide-surface-alt">
-              {dict.schedule.map((item, i) => (
-                <div key={i} className="flex items-center justify-between py-3">
-                  <span className="text-sm font-medium text-foreground">{item.day}</span>
-                  <span className="text-sm text-muted">{item.hours}</span>
-                </div>
-              ))}
+              {dict.schedule.map((item, i) => {
+                const isToday = i === todayIndex;
+                return (
+                  <div
+                    key={i}
+                    className={`flex items-center justify-between py-3 ${
+                      isToday ? "rounded-lg bg-primary/5 -mx-3 px-3" : ""
+                    }`}
+                  >
+                    <span className={`text-sm font-medium ${isToday ? "text-primary" : "text-foreground"}`}>
+                      {item.day}
+                      {isToday && <span className="ml-2 inline-block h-1.5 w-1.5 rounded-full bg-accent" />}
+                    </span>
+                    <span className={`text-sm ${isToday ? "font-medium text-primary" : "text-muted"}`}>
+                      {item.hours}
+                    </span>
+                  </div>
+                );
+              })}
             </div>
           </motion.div>
 

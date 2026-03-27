@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState, useCallback } from "react";
-import LocaleSwitcher from "./locale-switcher";
+import LanguageSwitcher from "./language-switcher";
 
 interface NavLink {
   id: string;
@@ -32,7 +32,7 @@ export default function Navbar({ lang, dict }: NavbarProps) {
   }, []);
 
   useEffect(() => {
-    const ids = ["home", ...dict.links.map((l) => l.id)];
+    const ids = ["hero", ...dict.links.map((l) => l.id)];
     const observers: IntersectionObserver[] = [];
     ids.forEach((id) => {
       const el = document.getElementById(id);
@@ -76,9 +76,9 @@ export default function Navbar({ lang, dict }: NavbarProps) {
       >
         <div className="mx-auto flex h-full max-w-7xl items-center justify-between px-4 md:px-8">
           <a
-            href={`/${lang}#home`}
-            className={`shrink-0 font-display text-xl font-bold tracking-tight transition-colors duration-300 ${
-              scrolled ? "text-primary-dark" : "text-primary"
+            href={`/${lang}#hero`}
+            className={`shrink-0 text-xl font-bold tracking-tight transition-colors duration-300 ${
+              scrolled ? "text-primary" : "text-white"
             }`}
           >
             {dict.brand}
@@ -90,7 +90,7 @@ export default function Navbar({ lang, dict }: NavbarProps) {
                 key={link.id}
                 onClick={() => scrollTo(link.id)}
                 className={`relative cursor-pointer text-sm font-medium transition-colors hover:opacity-70 ${
-                  scrolled ? "text-foreground" : "text-muted"
+                  scrolled ? "text-foreground" : "text-white/80"
                 }`}
               >
                 {link.label}
@@ -99,21 +99,21 @@ export default function Navbar({ lang, dict }: NavbarProps) {
                 )}
               </button>
             ))}
-            <LocaleSwitcher />
+            <LanguageSwitcher scrolled={scrolled} />
             <button
               onClick={openAppointment}
-              className="cursor-pointer rounded-lg bg-primary px-4 py-1.5 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-primary-dark"
+              className="cursor-pointer rounded-lg bg-primary px-4 py-1.5 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-primary-light"
             >
               {dict.cta}
             </button>
           </nav>
 
           <div className="flex items-center gap-3 md:hidden">
-            <LocaleSwitcher />
+            <LanguageSwitcher scrolled={scrolled} />
             <button
               onClick={() => setMenuOpen((v) => !v)}
               aria-label="Toggle menu"
-              className={`transition-colors ${scrolled ? "text-foreground" : "text-muted"}`}
+              className={`transition-colors ${scrolled ? "text-foreground" : "text-white"}`}
             >
               <svg
                 width="22"
@@ -144,7 +144,7 @@ export default function Navbar({ lang, dict }: NavbarProps) {
       </header>
 
       <div
-        className={`fixed inset-x-0 top-14 z-40 bg-background/95 shadow-md backdrop-blur-md transition-all duration-300 md:hidden ${
+        className={`fixed inset-x-0 top-14 z-40 shadow-md backdrop-blur-md transition-all duration-300 md:hidden bg-background/95 ${
           menuOpen ? "translate-y-0 opacity-100" : "pointer-events-none -translate-y-2 opacity-0"
         }`}
       >
@@ -156,7 +156,7 @@ export default function Navbar({ lang, dict }: NavbarProps) {
               className={`text-left text-sm font-medium transition-colors hover:text-primary ${
                 activeSection === link.id
                   ? "text-primary"
-                  : "text-muted"
+                  : "text-foreground/70"
               }`}
             >
               {link.label}
@@ -164,7 +164,7 @@ export default function Navbar({ lang, dict }: NavbarProps) {
           ))}
           <button
             onClick={openAppointment}
-            className="mt-1 rounded-lg bg-primary px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-primary-dark"
+            className="mt-1 rounded-lg bg-primary px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-primary-light"
           >
             {dict.cta}
           </button>

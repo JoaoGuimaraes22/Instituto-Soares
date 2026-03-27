@@ -56,6 +56,7 @@ export default function Appointment({ dict }: { dict: AppointmentDict }) {
     setContact("");
     setNote("");
     document.body.style.overflow = "";
+    window.dispatchEvent(new Event("close-appointment"));
   }, []);
 
   useEffect(() => {

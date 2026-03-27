@@ -38,10 +38,10 @@ export default function Contact({ dict }: { dict: ContactDict }) {
       ref={ref}
       className="bg-surface-alt px-6 py-16 md:px-8 md:py-24 xl:px-16 xl:py-32"
     >
-      <div className="mx-auto max-w-6xl">
+      <div className="mx-auto lg:max-w-6xl">
         {/* Header */}
         <motion.div
-          className="mb-12"
+          className="mb-12 text-center lg:text-left"
           initial={{ opacity: 0, y: 32 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
@@ -61,7 +61,7 @@ export default function Contact({ dict }: { dict: ContactDict }) {
         <div className="grid gap-6 lg:grid-cols-2">
           {/* Left — Contact info + CTAs */}
           <motion.div
-            className="flex flex-col gap-5 rounded-2xl border border-black/5 bg-surface p-6 shadow-sm lg:p-8"
+            className="flex flex-col gap-4 rounded-2xl border border-black/5 bg-surface p-4 shadow-sm sm:p-6 lg:p-8"
             initial={{ opacity: 0, y: 32 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{
@@ -75,9 +75,9 @@ export default function Contact({ dict }: { dict: ContactDict }) {
             {/* Phone */}
             <a
               href={`tel:${dict.phone.replace(/\s/g, "")}`}
-              className="group -mx-3 flex items-center gap-4 rounded-xl p-3 transition-colors hover:bg-primary/5"
+              className="group flex items-center gap-3 rounded-xl p-2 sm:p-3 transition-colors hover:bg-primary/5"
             >
-              <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-primary/10 transition-colors group-hover:bg-primary/20">
+              <div className="flex h-10 w-10 sm:h-12 sm:w-12 shrink-0 items-center justify-center rounded-full bg-primary/10 transition-colors group-hover:bg-primary/20">
                 <svg
                   width="20"
                   height="20"
@@ -105,9 +105,9 @@ export default function Contact({ dict }: { dict: ContactDict }) {
               href={dict.mapLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="group -mx-3 flex items-center gap-4 rounded-xl p-3 transition-colors hover:bg-primary/5"
+              className="group flex items-center gap-3 rounded-xl p-2 sm:p-3 transition-colors hover:bg-primary/5"
             >
-              <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-primary/10 transition-colors group-hover:bg-primary/20">
+              <div className="flex h-10 w-10 sm:h-12 sm:w-12 shrink-0 items-center justify-center rounded-full bg-primary/10 transition-colors group-hover:bg-primary/20">
                 <svg
                   width="20"
                   height="20"
@@ -133,9 +133,9 @@ export default function Contact({ dict }: { dict: ContactDict }) {
             {/* Email */}
             <a
               href={`mailto:${dict.email}`}
-              className="group -mx-3 flex items-center gap-4 rounded-xl p-3 transition-colors hover:bg-primary/5"
+              className="group flex items-center gap-3 rounded-xl p-2 sm:p-3 transition-colors hover:bg-primary/5"
             >
-              <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-primary/10 transition-colors group-hover:bg-primary/20">
+              <div className="flex h-10 w-10 sm:h-12 sm:w-12 shrink-0 items-center justify-center rounded-full bg-primary/10 transition-colors group-hover:bg-primary/20">
                 <svg
                   width="20"
                   height="20"

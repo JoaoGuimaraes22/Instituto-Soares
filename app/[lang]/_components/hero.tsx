@@ -52,7 +52,7 @@ export default function Hero({ dict }: { dict: Dict }) {
     <section
       ref={ref}
       id="hero"
-      className="relative min-h-[100dvh] flex items-center overflow-hidden"
+      className="relative h-[100dvh] flex flex-col overflow-hidden"
     >
       {/* Background image */}
       <div className="absolute inset-0">
@@ -70,8 +70,9 @@ export default function Hero({ dict }: { dict: Dict }) {
         <div className="absolute bottom-0 inset-x-0 h-40 bg-gradient-to-t from-foreground/80 to-transparent" />
       </div>
 
-      {/* Content */}
-      <div className="relative z-10 w-full max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 pt-32 pb-40">
+      {/* Content — fills viewport, two-column on desktop */}
+      <div className="relative z-10 w-full max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 pt-24 sm:pt-28 lg:pt-32 flex-1 flex items-center">
+        <div className="flex w-full items-center justify-between gap-12">
         <div className="relative max-w-2xl pl-0 lg:pl-10">
           {/* Spine line accent */}
           <SpineLine />
@@ -81,7 +82,7 @@ export default function Hero({ dict }: { dict: Dict }) {
             initial={{ opacity: 0, y: 20 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ delay: 0.2, duration: 0.7, ease }}
-            className="mb-6"
+            className="mb-4 sm:mb-5"
           >
             <span className="inline-flex items-center gap-2 text-xs font-medium tracking-[0.2em] uppercase text-primary-light border border-primary-light/30 rounded-full px-4 py-1.5 bg-primary/10 backdrop-blur-sm">
               <span className="w-1.5 h-1.5 rounded-full bg-accent animate-pulse" />
@@ -90,7 +91,7 @@ export default function Hero({ dict }: { dict: Dict }) {
           </motion.div>
 
           {/* Three-line title */}
-          <div className="mb-8">
+          <div className="mb-5 sm:mb-6">
             {[dict.titleLine1, dict.titleLine2, dict.titleLine3].map(
               (line, i) => (
                 <motion.h1
@@ -98,7 +99,7 @@ export default function Hero({ dict }: { dict: Dict }) {
                   initial={{ opacity: 0, x: -40 }}
                   animate={inView ? { opacity: 1, x: 0 } : {}}
                   transition={{ delay: 0.3 + i * 0.15, duration: 0.8, ease }}
-                  className="font-display text-6xl sm:text-7xl lg:text-8xl xl:text-9xl text-white leading-[0.9] tracking-tight"
+                  className="font-display text-5xl sm:text-6xl lg:text-7xl xl:text-8xl text-white leading-[0.9] tracking-tight"
                 >
                   {line}
                 </motion.h1>
@@ -111,7 +112,7 @@ export default function Hero({ dict }: { dict: Dict }) {
             initial={{ width: 0 }}
             animate={inView ? { width: "5rem" } : {}}
             transition={{ delay: 0.9, duration: 0.8, ease }}
-            className="h-1 bg-gradient-to-r from-primary to-primary-light rounded-full mb-6"
+            className="h-1 bg-gradient-to-r from-primary to-primary-light rounded-full mb-4 sm:mb-5"
           />
 
           {/* Tagline */}
@@ -119,7 +120,7 @@ export default function Hero({ dict }: { dict: Dict }) {
             initial={{ opacity: 0, y: 20 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ delay: 0.8, duration: 0.7, ease }}
-            className="text-base sm:text-lg text-white/70 max-w-md leading-relaxed mb-10"
+            className="text-base sm:text-lg text-white/70 max-w-md leading-relaxed mb-6 sm:mb-8"
           >
             {dict.tagline}
           </motion.p>
@@ -129,13 +130,13 @@ export default function Hero({ dict }: { dict: Dict }) {
             initial={{ opacity: 0, y: 20 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ delay: 1, duration: 0.7, ease }}
-            className="flex flex-wrap gap-4"
+            className="flex flex-wrap gap-3 sm:gap-4"
           >
             <button
               onClick={() =>
                 window.dispatchEvent(new Event("open-appointment"))
               }
-              className="group inline-flex items-center gap-2 bg-primary hover:bg-primary-light text-white font-medium px-7 py-3.5 rounded-xl transition-all duration-300 hover:shadow-lg hover:shadow-primary/25"
+              className="group inline-flex items-center gap-2 bg-primary hover:bg-primary-light text-white font-medium px-6 py-3 sm:px-7 sm:py-3.5 rounded-xl transition-all duration-300 hover:shadow-lg hover:shadow-primary/25"
             >
               {dict.cta}
               <svg
@@ -154,36 +155,33 @@ export default function Hero({ dict }: { dict: Dict }) {
             </button>
             <a
               href="#services"
-              className="inline-flex items-center gap-2 border border-white/20 hover:border-white/40 text-white/80 hover:text-white font-medium px-7 py-3.5 rounded-xl transition-all duration-300 backdrop-blur-sm"
+              className="inline-flex items-center gap-2 border border-white/20 hover:border-white/40 text-white/80 hover:text-white font-medium px-6 py-3 sm:px-7 sm:py-3.5 rounded-xl transition-all duration-300 backdrop-blur-sm"
             >
               {dict.ctaSecondary}
             </a>
           </motion.div>
         </div>
-      </div>
 
-      {/* Stats bar — anchored to bottom */}
-      <motion.div
-        initial={{ opacity: 0, y: 30 }}
-        animate={inView ? { opacity: 1, y: 0 } : {}}
-        transition={{ delay: 1.2, duration: 0.8, ease }}
-        className="absolute bottom-0 inset-x-0 z-10"
-      >
-        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 pb-8">
-          <div className="flex items-center gap-8 sm:gap-12">
-            {dict.stats.map((stat, i) => (
-              <div key={i} className="flex items-baseline gap-2">
-                <span className="text-2xl sm:text-3xl font-display text-white">
-                  {stat.value}
-                </span>
-                <span className="text-xs sm:text-sm text-white/50 uppercase tracking-wider">
-                  {stat.label}
-                </span>
+        {/* Stats — vertical column on the right, desktop only */}
+        <motion.div
+          initial={{ opacity: 0, x: 30 }}
+          animate={inView ? { opacity: 1, x: 0 } : {}}
+          transition={{ delay: 1.2, duration: 0.8, ease }}
+          className="hidden lg:flex flex-col gap-8"
+        >
+          {dict.stats.map((stat, i) => (
+            <div key={i} className="text-right">
+              <div className="text-3xl xl:text-4xl font-display text-white">
+                {stat.value}
               </div>
-            ))}
-          </div>
+              <div className="text-xs text-white/50 uppercase tracking-wider mt-1">
+                {stat.label}
+              </div>
+            </div>
+          ))}
+        </motion.div>
         </div>
-      </motion.div>
+      </div>
 
       {/* Scroll hint */}
       <motion.div

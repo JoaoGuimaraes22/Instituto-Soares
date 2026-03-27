@@ -31,13 +31,13 @@ export default function LanguageSwitcher({
                 ? "text-primary font-semibold"
                 : scrolled
                   ? "text-muted hover:text-foreground"
-                  : "text-muted hover:text-foreground/70"
+                  : "text-white/50 hover:text-white/80"
             }`}
           >
             {locale}
           </button>
           {index < i18n.locales.length - 1 && (
-            <span className="text-muted">/</span>
+            <span className={scrolled ? "text-muted/50" : "text-white/30"}>/</span>
           )}
         </span>
       ))}
