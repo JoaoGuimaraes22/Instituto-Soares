@@ -1,15 +1,441 @@
 {
   "metadata": {
-    "name": "Business Name",
-    "title": "Business Name | City",
-    "description": "Welcome to my site.",
-    "phone": "",
+    "name": "Instituto Soares",
+    "title": "Instituto Soares — Chiropractic & Advanced Aesthetics | Agualva-Cacém",
+    "description": "Expert chiropractic care and advanced aesthetic treatments in Agualva-Cacém. Spinal adjustments, therapeutic massage, facial cleansing, laser hair removal, and more. 5-star rated.",
+    "phone": "+351 913 005 574",
     "email": "",
-    "address": "",
-    "type": "LocalBusiness"
+    "address": "R. Ten-Cel. Salgueiro Maia 68, 2735-545 Agualva-Cacém",
+    "type": "Chiropractor"
   },
+
+  "navbar": {
+    "brand": "Instituto Soares",
+    "cta": "Book Appointment",
+    "links": [
+      { "id": "about", "label": "About" },
+      { "id": "conditions", "label": "Conditions" },
+      { "id": "services", "label": "Services" },
+      { "id": "process", "label": "How It Works" },
+      { "id": "team", "label": "Team" },
+      { "id": "pricing", "label": "Plans" },
+      { "id": "faq", "label": "FAQ" },
+      { "id": "contact", "label": "Contact" }
+    ]
+  },
+
+  "hero": {
+    "badge": "Chiropractic & Aesthetics",
+    "titleLine1": "ALIGN.",
+    "titleLine2": "RENEW.",
+    "titleLine3": "THRIVE.",
+    "tagline": "Expert chiropractic adjustments and advanced aesthetic treatments — your wellness, our craft.",
+    "cta": "Book Appointment",
+    "ctaSecondary": "Explore Our Services",
+    "stats": [
+      { "value": "5.0★", "label": "Google Rating" },
+      { "value": "155+", "label": "Happy Patients" },
+      { "value": "5+", "label": "Years of Care" }
+    ]
+  },
+
+  "statsCounters": {
+    "titleLine1": "TRUSTED BY",
+    "titleLine2": "PATIENTS",
+    "items": [
+      { "label": "Patients Treated", "target": 1500, "suffix": "+" },
+      { "label": "5-Star Reviews", "target": 155, "suffix": "+" },
+      { "label": "Years Experience", "target": 5, "suffix": "+" },
+      { "label": "Treatments Offered", "target": 15, "suffix": "+" }
+    ]
+  },
+
+  "about": {
+    "badge": "Our Story",
+    "titleLine1": "CARE THAT",
+    "titleLine2": "TRANSFORMS",
+    "body": "Instituto Soares is a dual-specialty clinic in Agualva-Cacém run by the Soares family. We combine expert chiropractic care with advanced aesthetic treatments — because true wellness is about how you feel and how you look.\n\nEvery procedure is explained step by step. Every client receives personalized follow-up care. From your first consultation to your follow-up visit, we treat you like family.",
+    "image": "/about/about-1.webp",
+    "stats": [
+      { "value": "2020", "label": "Founded" },
+      { "value": "Agualva-Cacém", "label": "Location" }
+    ]
+  },
+
+  "conditions": {
+    "badge": "What We Treat",
+    "titleLine1": "CONDITIONS",
+    "titleLine2": "WE TREAT",
+    "subtitle": "We specialize in treating a wide range of musculoskeletal and skin conditions.",
+    "items": [
+      {
+        "icon": "spine",
+        "title": "Back Pain",
+        "description": "Lower and upper back pain relief through targeted spinal adjustments and therapeutic massage."
+      },
+      {
+        "icon": "neck",
+        "title": "Neck & Shoulder Pain",
+        "description": "Cervical adjustments for stiffness, tension, and chronic neck and shoulder pain."
+      },
+      {
+        "icon": "nerve",
+        "title": "Lumbar Pain",
+        "description": "Decompression techniques to relieve lumbar pressure and sciatica symptoms."
+      },
+      {
+        "icon": "posture",
+        "title": "Posture Correction",
+        "description": "Long-term postural improvement for desk workers, students, and active individuals."
+      },
+      {
+        "icon": "skin",
+        "title": "Acne & Skin Issues",
+        "description": "Professional deep cleansing and skincare consultations for acne, oily skin, and blemishes."
+      },
+      {
+        "icon": "sparkle",
+        "title": "Aesthetic Enhancement",
+        "description": "Microblading, laser hair removal, eyelash extensions, and advanced skin treatments."
+      }
+    ]
+  },
+
+  "services": {
+    "badge": "Our Services",
+    "titleLine1": "WHAT WE",
+    "titleLine2": "OFFER",
+    "categories": [
+      {
+        "title": "Chiropractic",
+        "items": [
+          {
+            "title": "Spinal Adjustment",
+            "description": "Precise manual adjustments to restore proper spinal alignment and relieve pain.",
+            "image": "/services/adjustment.webp"
+          },
+          {
+            "title": "Therapeutic Massage IS",
+            "description": "Our signature massage combining deep tissue techniques for full-body tension relief.",
+            "image": "/services/massage.webp"
+          },
+          {
+            "title": "Pain Relief Session",
+            "description": "Targeted treatment for back, neck, shoulder, and lumbar pain with immediate results.",
+            "image": "/services/pain-relief.webp"
+          }
+        ]
+      },
+      {
+        "title": "Aesthetics",
+        "items": [
+          {
+            "title": "Deep Facial Cleansing",
+            "description": "Professional skin cleansing with personalized aftercare routine and product recommendations.",
+            "image": "/services/facial.webp"
+          },
+          {
+            "title": "Laser Hair Removal",
+            "description": "Diode laser technology for all skin types, comfortable and effective permanent reduction.",
+            "image": "/services/laser.webp"
+          },
+          {
+            "title": "Microblading & Lashes",
+            "description": "Natural-looking eyebrow microblading and eyelash extensions by a certified specialist.",
+            "image": "/services/microblading.webp"
+          }
+        ]
+      }
+    ]
+  },
+
+  "process": {
+    "badge": "Your Journey",
+    "titleLine1": "HOW IT",
+    "titleLine2": "WORKS",
+    "subtitle": "Your path to better health and confidence, step by step.",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Consultation",
+        "description": "We listen to your concerns, review your history, and understand your goals."
+      },
+      {
+        "number": "02",
+        "title": "Assessment",
+        "description": "Comprehensive evaluation to identify the root cause and design the best approach."
+      },
+      {
+        "number": "03",
+        "title": "Treatment Plan",
+        "description": "A personalized care plan tailored to your condition, preferences, and lifestyle."
+      },
+      {
+        "number": "04",
+        "title": "Treatment",
+        "description": "Expert hands-on care — every step explained, your comfort always our priority."
+      },
+      {
+        "number": "05",
+        "title": "Follow-Up",
+        "description": "Ongoing care instructions, progress tracking, and support between visits."
+      }
+    ]
+  },
+
+  "team": {
+    "badge": "Meet the Team",
+    "titleLine1": "EXPERT",
+    "titleLine2": "PRACTITIONERS",
+    "subtitle": "The Soares family — dedicated to your wellness and beauty.",
+    "members": [
+      {
+        "name": "Netto Soares",
+        "role": "Chiropractic Specialist",
+        "specialization": "Spinal Adjustment & Therapeutic Massage",
+        "description": "Netto brings precision and care to every adjustment. Known for explaining every step clearly, he transforms fear into confidence and pain into relief. Patients consistently describe feeling lighter and renewed after a single session.",
+        "image": "/team/netto.webp"
+      },
+      {
+        "name": "Roberta Soares",
+        "role": "Advanced Aesthetics Specialist",
+        "specialization": "Skincare, Laser & Micropigmentation",
+        "description": "With over 5 years of dedicated practice, Roberta combines expert technique with genuine warmth. From facial cleansing to laser hair removal, she delivers visible results with personalized aftercare that keeps clients coming back year after year.",
+        "image": "/team/roberta.webp"
+      }
+    ]
+  },
+
+  "galleryStrip": {
+    "images": [
+      { "src": "/gallery/gallery-1.webp", "alt": "Clinic interior" },
+      { "src": "/gallery/gallery-2.webp", "alt": "Treatment room" },
+      { "src": "/gallery/gallery-3.webp", "alt": "Chiropractic session" },
+      { "src": "/gallery/gallery-4.webp", "alt": "Aesthetics treatment room" },
+      { "src": "/gallery/gallery-5.webp", "alt": "Reception area" },
+      { "src": "/gallery/gallery-6.webp", "alt": "Consultation" }
+    ]
+  },
+
+  "reviews": {
+    "badge": "What Patients Say",
+    "titleLine1": "PATIENT",
+    "titleLine2": "REVIEWS",
+    "subtitle": "Real feedback from real patients — 5.0 rating on Google.",
+    "items": [
+      {
+        "quote": "If I could give 10 stars, I would. I've been doing treatment with Netto who has helped me immensely — I notice improvement with every session. Roberta is also excellent with her skincare treatments. Both are extremely professional and caring.",
+        "name": "Silvia Mendes",
+        "role": "Google Review",
+        "avatar": null
+      },
+      {
+        "quote": "I had back pain so intense I couldn't sleep. After being treated by Dr. Netto, the pain decreased, and after continuing treatment I'm now pain-free. I also recommend Roberta's aesthetics treatments — magic hands and true dedication.",
+        "name": "Emely Luísa",
+        "role": "Google Review",
+        "avatar": null
+      },
+      {
+        "quote": "The facial cleansing was amazing from start to finish — relaxing and professional. My skin is visibly cleaner, softer, and much healthier. Dr. Roberta's personalized skincare consultation at the end was incredibly detailed.",
+        "name": "Boris",
+        "role": "Google Review",
+        "avatar": null
+      },
+      {
+        "quote": "I did chiropractic followed by therapeutic massage and only have praise! The professional was attentive, explained every step clearly, and gave me great confidence. I left feeling light and aligned. A true relief for body and mind!",
+        "name": "Bruno Andrade",
+        "role": "Google Review",
+        "avatar": null
+      },
+      {
+        "quote": "The clinic is exceptionally well-maintained. Netto is an excellent professional — he attended me, we talked, asked for my consent before the procedure. The pain in my back and spine was gone so quickly after the adjustment. Super recommend!",
+        "name": "Nice Salimatu Camará",
+        "role": "Google Review",
+        "avatar": null
+      },
+      {
+        "quote": "I went for a chiropractic session and a signature massage with Dr. Netto. It felt like a weight was lifted from my shoulders! A very rewarding session — he explained all the stages and addressed every point that needed attention.",
+        "name": "David Silva",
+        "role": "Google Review",
+        "avatar": null
+      }
+    ]
+  },
+
+  "hours": {
+    "badge": "Visit Us",
+    "titleLine1": "OPENING",
+    "titleLine2": "HOURS",
+    "subtitle": "We're here when you need us.",
+    "hoursLabel": "Clinic Hours",
+    "schedule": [
+      { "day": "Monday", "hours": "Closed" },
+      { "day": "Tuesday", "hours": "09:30 – 20:00" },
+      { "day": "Wednesday", "hours": "09:30 – 20:00" },
+      { "day": "Thursday", "hours": "09:30 – 20:00" },
+      { "day": "Friday", "hours": "09:30 – 20:00" },
+      { "day": "Saturday", "hours": "08:30 – 14:00" },
+      { "day": "Sunday", "hours": "Closed" }
+    ],
+    "note": "Appointments recommended. Call or message us to book your visit."
+  },
+
+  "pricing": {
+    "badge": "Investment in Wellness",
+    "titleLine1": "CARE",
+    "titleLine2": "PLANS",
+    "subtitle": "Transparent pricing for every stage of your treatment.",
+    "popularLabel": "Most Popular",
+    "cta": "Book Now",
+    "disclaimer": "Prices may vary based on individual treatment needs. Contact us for a personalized quote.",
+    "plans": [
+      {
+        "name": "Single Session",
+        "price": "€45",
+        "period": "per visit",
+        "features": [
+          "Chiropractic adjustment OR massage",
+          "Full assessment on first visit",
+          "Personalized care instructions"
+        ],
+        "popular": false
+      },
+      {
+        "name": "Wellness Combo",
+        "price": "€75",
+        "period": "per visit",
+        "features": [
+          "Chiropractic adjustment",
+          "Therapeutic massage IS",
+          "Posture assessment",
+          "Follow-up care plan"
+        ],
+        "popular": true
+      },
+      {
+        "name": "Aesthetics Session",
+        "price": "€60",
+        "period": "per visit",
+        "features": [
+          "Deep facial cleansing OR laser session",
+          "Skincare consultation",
+          "Product recommendations",
+          "Aftercare guidance"
+        ],
+        "popular": false
+      }
+    ]
+  },
+
+  "faq": {
+    "badge": "Questions",
+    "titleLine1": "COMMON",
+    "titleLine2": "QUESTIONS",
+    "items": [
+      {
+        "question": "Is chiropractic care safe?",
+        "answer": "Absolutely. Netto explains every step before and during treatment. Patients consistently report feeling safe, secure, and confident throughout the process. Many who were initially nervous about chiropractic leave as loyal clients."
+      },
+      {
+        "question": "Does the adjustment hurt?",
+        "answer": "No. Our patients describe the experience as relieving, not painful. You may hear a gentle sound during the adjustment, but the technique is precise and comfortable. Most patients feel immediate relief."
+      },
+      {
+        "question": "What should I expect on my first visit?",
+        "answer": "A full consultation where we listen to your concerns, assess your condition, and explain the proposed treatment. Your consent is always asked before any procedure. You'll leave with a clear care plan."
+      },
+      {
+        "question": "Can I combine chiropractic and aesthetics services?",
+        "answer": "Yes! Many of our clients enjoy both services in a single visit. You might start with a spinal adjustment with Netto and follow up with a facial treatment with Roberta."
+      },
+      {
+        "question": "How many chiropractic sessions will I need?",
+        "answer": "It depends on your condition. Some patients feel significant relief after the first session. For chronic issues, a treatment plan of several sessions is typically recommended for lasting results."
+      },
+      {
+        "question": "Is laser hair removal suitable for all skin types?",
+        "answer": "Yes. We use diode laser technology that is safe and effective for all skin types, including darker tones. Roberta adjusts the temperature and settings for your comfort and safety."
+      }
+    ]
+  },
+
+  "contact": {
+    "badge": "Get in Touch",
+    "titleLine1": "VISIT",
+    "titleLine2": "OUR CLINIC",
+    "body": "Book your appointment today. We'd love to welcome you to our clinic.",
+    "bookCta": "Book Appointment",
+    "callCta": "Call Us",
+    "phone": "+351 913 005 574",
+    "email": "",
+    "address": "R. Ten-Cel. Salgueiro Maia 68, 2735-545 Agualva-Cacém",
+    "hours": "Tue-Fri 09:30–20:00, Sat 08:30–14:00",
+    "mapLink": "https://maps.google.com/?cid=17296575484686215002",
+    "map": {
+      "address": "R. Ten-Cel. Salgueiro Maia 68, 2735-545 Agualva-Cacém",
+      "mapsEmbedUrl": "https://www.google.com/maps?cid=17296575484686215002&output=embed",
+      "mapTitle": "Instituto Soares location"
+    }
+  },
+
+  "appointment": {
+    "title": "Book an Appointment",
+    "subtitle": "Schedule your visit in a few simple steps.",
+    "nameLabel": "Your name",
+    "contactLabel": "Email or phone",
+    "serviceLabel": "Service needed",
+    "serviceOptions": [
+      "Chiropractic Adjustment",
+      "Therapeutic Massage IS",
+      "Chiro + Massage Combo",
+      "Deep Facial Cleansing",
+      "Laser Hair Removal",
+      "Microblading",
+      "Eyelash Extensions",
+      "Skincare Consultation",
+      "Other"
+    ],
+    "noteLabel": "Additional notes (optional)",
+    "dateLabel": "Pick a date",
+    "timeLabel": "Preferred time",
+    "confirmCta": "Confirm Appointment",
+    "successTitle": "Appointment Requested!",
+    "successBody": "We'll confirm your appointment shortly via phone or message.",
+    "backCta": "Book another",
+    "times": ["09:30", "10:00", "10:30", "11:00", "11:30", "12:00", "12:30", "14:30", "15:00", "15:30", "16:00", "16:30", "17:00", "17:30", "18:00", "18:30", "19:00", "19:30"],
+    "days": ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+    "months": ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
+  },
+
+  "footer": {
+    "brand": "Instituto Soares",
+    "tagline": "Chiropractic care and advanced aesthetics in Agualva-Cacém.",
+    "address": "R. Ten-Cel. Salgueiro Maia 68, 2735-545 Agualva-Cacém",
+    "hours": "Tue-Fri 09:30–20:00, Sat 08:30–14:00",
+    "phone": "+351 913 005 574",
+    "email": "",
+    "copyright": "Instituto Soares. All rights reserved.",
+    "bookCta": "Book Appointment",
+    "exploreLabel": "Explore",
+    "hoursLabel": "Hours",
+    "findUsLabel": "Find Us",
+    "madeIn": "Made in Portugal",
+    "navLinks": [
+      { "id": "about", "label": "About" },
+      { "id": "services", "label": "Services" },
+      { "id": "team", "label": "Team" },
+      { "id": "contact", "label": "Contact" }
+    ]
+  },
+
+  "appointmentBar": {
+    "ctaBook": "Book Appointment",
+    "ctaCall": "Call Us",
+    "phone": "+351 913 005 574"
+  },
+
   "home": {
-    "title": "Welcome",
-    "description": "This is the starting point of your project. Edit this page to get started."
+    "title": "Instituto Soares",
+    "description": "Chiropractic care and advanced aesthetics — your wellness, our craft."
   }
 }

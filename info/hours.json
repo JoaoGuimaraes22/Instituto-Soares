@@ -1,0 +1,30 @@
+[
+  {
+    "day": "Friday",
+    "hours": "09:30–20:00"
+  },
+  {
+    "day": "Saturday",
+    "hours": "08:30–14:00"
+  },
+  {
+    "day": "Sunday",
+    "hours": "Encerrado"
+  },
+  {
+    "day": "Monday",
+    "hours": "Encerrado"
+  },
+  {
+    "day": "Tuesday",
+    "hours": "09:30–20:00"
+  },
+  {
+    "day": "Wednesday",
+    "hours": "09:30–20:00"
+  },
+  {
+    "day": "Thursday",
+    "hours": "09:30–20:00"
+  }
+]

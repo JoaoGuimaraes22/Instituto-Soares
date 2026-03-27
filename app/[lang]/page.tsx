@@ -1,6 +1,23 @@
 import { notFound } from "next/navigation";
 import { getDictionary, hasLocale } from "./dictionaries";
-import LocaleSwitcher from "./_components/locale-switcher";
+import ScrollProgress from "./_components/scroll-progress";
+import Navbar from "./_components/navbar";
+import Hero from "./_components/hero";
+import StatsCounters from "./_components/stats-counters";
+import About from "./_components/about";
+import Conditions from "./_components/conditions";
+import Services from "./_components/services";
+import Process from "./_components/process";
+import Team from "./_components/team";
+import GalleryStrip from "./_components/gallery-strip";
+import Reviews from "./_components/reviews";
+import Hours from "./_components/hours";
+import Pricing from "./_components/pricing";
+import FAQ from "./_components/faq";
+import Contact from "./_components/contact";
+import Appointment from "./_components/appointment";
+import Footer from "./_components/footer";
+import AppointmentBar from "./_components/appointment-bar";
 
 export default async function Home({ params }: PageProps<"/[lang]">) {
   const { lang } = await params;
@@ -10,16 +27,27 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
   const dict = await getDictionary(lang);
 
   return (
-    <div className="flex flex-1 flex-col items-center justify-center">
-      <main className="flex w-full max-w-2xl flex-col items-center gap-8 px-6 py-24 text-center">
-        <LocaleSwitcher />
-        <h1 className="text-4xl font-bold tracking-tight text-zinc-900 dark:text-zinc-50">
-          {dict.home.title}
-        </h1>
-        <p className="max-w-md text-lg text-zinc-600 dark:text-zinc-400">
-          {dict.home.description}
-        </p>
+    <>
+      <ScrollProgress />
+      <Navbar dict={dict.navbar} lang={lang} />
+      <main id="main">
+        <Hero dict={dict.hero} />
+        <StatsCounters dict={dict.statsCounters} />
+        <About dict={dict.about} />
+        <Conditions dict={dict.conditions} />
+        <Services dict={dict.services} />
+        <Process dict={dict.process} />
+        <Team dict={dict.team} />
+        <GalleryStrip dict={dict.galleryStrip} />
+        <Reviews dict={dict.reviews} />
+        <Hours dict={dict.hours} />
+        <Pricing dict={dict.pricing} />
+        <FAQ dict={dict.faq} />
+        <Contact dict={dict.contact} />
+        <Appointment dict={dict.appointment} />
       </main>
-    </div>
+      <Footer dict={dict.footer} />
+      <AppointmentBar dict={dict.appointmentBar} />
+    </>
   );
 }

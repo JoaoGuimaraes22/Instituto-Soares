@@ -1,15 +1,441 @@
 {
   "metadata": {
-    "name": "Nome do Negócio",
-    "title": "Nome do Negócio | Cidade",
-    "description": "Bem-vindo ao meu site.",
-    "phone": "",
+    "name": "Instituto Soares",
+    "title": "Instituto Soares — Quiropraxia e Estética Avançada | Agualva-Cacém",
+    "description": "Cuidados quiropraxia especializados e tratamentos estéticos avançados em Agualva-Cacém. Ajustes vertebrais, massagem terapêutica, limpeza facial, depilação a laser e muito mais. Avaliação 5 estrelas.",
+    "phone": "+351 913 005 574",
     "email": "",
-    "address": "",
-    "type": "LocalBusiness"
+    "address": "R. Ten-Cel. Salgueiro Maia 68, 2735-545 Agualva-Cacém",
+    "type": "Chiropractor"
   },
+
+  "navbar": {
+    "brand": "Instituto Soares",
+    "cta": "Marcar Consulta",
+    "links": [
+      { "id": "about", "label": "Sobre" },
+      { "id": "conditions", "label": "Condições" },
+      { "id": "services", "label": "Serviços" },
+      { "id": "process", "label": "Como Funciona" },
+      { "id": "team", "label": "Equipa" },
+      { "id": "pricing", "label": "Planos" },
+      { "id": "faq", "label": "FAQ" },
+      { "id": "contact", "label": "Contacto" }
+    ]
+  },
+
+  "hero": {
+    "badge": "Quiropraxia e Estética",
+    "titleLine1": "ALINHAR.",
+    "titleLine2": "RENOVAR.",
+    "titleLine3": "VIVER.",
+    "tagline": "Ajustes quiropraxia especializados e tratamentos estéticos avançados — o seu bem-estar, o nosso ofício.",
+    "cta": "Marcar Consulta",
+    "ctaSecondary": "Explorar Serviços",
+    "stats": [
+      { "value": "5.0★", "label": "Avaliação Google" },
+      { "value": "155+", "label": "Pacientes Satisfeitos" },
+      { "value": "5+", "label": "Anos de Cuidado" }
+    ]
+  },
+
+  "statsCounters": {
+    "titleLine1": "CONFIANÇA",
+    "titleLine2": "DOS PACIENTES",
+    "items": [
+      { "label": "Pacientes Tratados", "target": 1500, "suffix": "+" },
+      { "label": "Avaliações 5 Estrelas", "target": 155, "suffix": "+" },
+      { "label": "Anos de Experiência", "target": 5, "suffix": "+" },
+      { "label": "Tratamentos Disponíveis", "target": 15, "suffix": "+" }
+    ]
+  },
+
+  "about": {
+    "badge": "A Nossa História",
+    "titleLine1": "CUIDADO QUE",
+    "titleLine2": "TRANSFORMA",
+    "body": "O Instituto Soares é uma clínica de dupla especialidade em Agualva-Cacém gerida pela família Soares. Combinamos cuidados quiropraxia especializados com tratamentos estéticos avançados — porque o verdadeiro bem-estar é sobre como se sente e como se vê.\n\nCada procedimento é explicado passo a passo. Cada cliente recebe acompanhamento personalizado. Desde a primeira consulta até à visita de seguimento, tratamos-o como família.",
+    "image": "/about/about-1.webp",
+    "stats": [
+      { "value": "2020", "label": "Fundação" },
+      { "value": "Agualva-Cacém", "label": "Localização" }
+    ]
+  },
+
+  "conditions": {
+    "badge": "O Que Tratamos",
+    "titleLine1": "CONDIÇÕES",
+    "titleLine2": "QUE TRATAMOS",
+    "subtitle": "Somos especializados no tratamento de uma vasta gama de condições musculoesqueléticas e de pele.",
+    "items": [
+      {
+        "icon": "spine",
+        "title": "Dor nas Costas",
+        "description": "Alívio de dores lombares e dorsais através de ajustes vertebrais direcionados e massagem terapêutica."
+      },
+      {
+        "icon": "neck",
+        "title": "Dor no Pescoço e Ombros",
+        "description": "Ajustes cervicais para rigidez, tensão e dores crónicas no pescoço e ombros."
+      },
+      {
+        "icon": "nerve",
+        "title": "Dor Lombar",
+        "description": "Técnicas de descompressão para aliviar a pressão lombar e sintomas de ciática."
+      },
+      {
+        "icon": "posture",
+        "title": "Correção Postural",
+        "description": "Melhoria postural a longo prazo para quem trabalha ao computador, estudantes e pessoas ativas."
+      },
+      {
+        "icon": "skin",
+        "title": "Acne e Problemas de Pele",
+        "description": "Limpeza profunda profissional e consultas de cuidados de pele para acne, oleosidade e imperfeições."
+      },
+      {
+        "icon": "sparkle",
+        "title": "Estética Avançada",
+        "description": "Microblading, depilação a laser, extensões de pestanas e tratamentos avançados de pele."
+      }
+    ]
+  },
+
+  "services": {
+    "badge": "Os Nossos Serviços",
+    "titleLine1": "O QUE",
+    "titleLine2": "OFERECEMOS",
+    "categories": [
+      {
+        "title": "Quiropraxia",
+        "items": [
+          {
+            "title": "Ajuste Vertebral",
+            "description": "Ajustes manuais precisos para restaurar o alinhamento correto da coluna e aliviar a dor.",
+            "image": "/services/adjustment.webp"
+          },
+          {
+            "title": "Massagem Terapêutica IS",
+            "description": "A nossa massagem exclusiva que combina técnicas de tecido profundo para alívio total de tensão.",
+            "image": "/services/massage.webp"
+          },
+          {
+            "title": "Sessão de Alívio de Dor",
+            "description": "Tratamento direcionado para dores nas costas, pescoço, ombros e lombar com resultados imediatos.",
+            "image": "/services/pain-relief.webp"
+          }
+        ]
+      },
+      {
+        "title": "Estética",
+        "items": [
+          {
+            "title": "Limpeza Facial Profunda",
+            "description": "Limpeza profissional de pele com rotina de cuidados personalizada e recomendações de produtos.",
+            "image": "/services/facial.webp"
+          },
+          {
+            "title": "Depilação a Laser",
+            "description": "Tecnologia de laser díodo para todos os tipos de pele, confortável e eficaz para redução permanente.",
+            "image": "/services/laser.webp"
+          },
+          {
+            "title": "Microblading e Pestanas",
+            "description": "Microblading de sobrancelhas com aspeto natural e extensões de pestanas por especialista certificada.",
+            "image": "/services/microblading.webp"
+          }
+        ]
+      }
+    ]
+  },
+
+  "process": {
+    "badge": "O Seu Percurso",
+    "titleLine1": "COMO",
+    "titleLine2": "FUNCIONA",
+    "subtitle": "O seu caminho para melhor saúde e confiança, passo a passo.",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Consulta",
+        "description": "Ouvimos as suas preocupações, analisamos o seu histórico e compreendemos os seus objetivos."
+      },
+      {
+        "number": "02",
+        "title": "Avaliação",
+        "description": "Avaliação completa para identificar a causa raiz e desenhar a melhor abordagem."
+      },
+      {
+        "number": "03",
+        "title": "Plano de Tratamento",
+        "description": "Um plano de cuidados personalizado adaptado à sua condição, preferências e estilo de vida."
+      },
+      {
+        "number": "04",
+        "title": "Tratamento",
+        "description": "Cuidados especializados — cada passo explicado, o seu conforto é sempre a nossa prioridade."
+      },
+      {
+        "number": "05",
+        "title": "Seguimento",
+        "description": "Instruções de cuidados contínuos, acompanhamento de progresso e suporte entre visitas."
+      }
+    ]
+  },
+
+  "team": {
+    "badge": "Conheça a Equipa",
+    "titleLine1": "PROFISSIONAIS",
+    "titleLine2": "ESPECIALIZADOS",
+    "subtitle": "A família Soares — dedicada ao seu bem-estar e beleza.",
+    "members": [
+      {
+        "name": "Netto Soares",
+        "role": "Especialista em Quiropraxia",
+        "specialization": "Ajuste Vertebral e Massagem Terapêutica",
+        "description": "O Netto traz precisão e cuidado a cada ajuste. Conhecido por explicar cada passo com clareza, transforma o medo em confiança e a dor em alívio. Os pacientes descrevem consistentemente sentirem-se mais leves e renovados após uma única sessão.",
+        "image": "/team/netto.webp"
+      },
+      {
+        "name": "Roberta Soares",
+        "role": "Especialista em Estética Avançada",
+        "specialization": "Cuidados de Pele, Laser e Micropigmentação",
+        "description": "Com mais de 5 anos de prática dedicada, a Roberta combina técnica especializada com genuína simpatia. Da limpeza facial à depilação a laser, entrega resultados visíveis com acompanhamento personalizado que faz os clientes voltarem ano após ano.",
+        "image": "/team/roberta.webp"
+      }
+    ]
+  },
+
+  "galleryStrip": {
+    "images": [
+      { "src": "/gallery/gallery-1.webp", "alt": "Interior da clínica" },
+      { "src": "/gallery/gallery-2.webp", "alt": "Sala de tratamento" },
+      { "src": "/gallery/gallery-3.webp", "alt": "Sessão de quiropraxia" },
+      { "src": "/gallery/gallery-4.webp", "alt": "Sala de estética" },
+      { "src": "/gallery/gallery-5.webp", "alt": "Receção" },
+      { "src": "/gallery/gallery-6.webp", "alt": "Consulta" }
+    ]
+  },
+
+  "reviews": {
+    "badge": "O Que Dizem os Pacientes",
+    "titleLine1": "AVALIAÇÕES",
+    "titleLine2": "DOS PACIENTES",
+    "subtitle": "Feedback real de pacientes reais — avaliação 5.0 no Google.",
+    "items": [
+      {
+        "quote": "Se pudesse dava 10 estrelas. Estou a fazer tratamento com o Sr. Netto que me tem ajudado imenso — noto melhoria a cada sessão. A Roberta é ótima com os tratamentos de pele. Ambos são extremamente profissionais e atenciosos.",
+        "name": "Silvia Mendes",
+        "role": "Avaliação Google",
+        "avatar": null
+      },
+      {
+        "quote": "Tinha dores nas costas tão intensas que não conseguia dormir. Depois de ser atendida pelo Dr. Netto, a dor diminuiu, e após continuar o tratamento estou agora sem dores. Recomendo também os tratamentos estéticos da Roberta — mãos mágicas e verdadeira dedicação.",
+        "name": "Emely Luísa",
+        "role": "Avaliação Google",
+        "avatar": null
+      },
+      {
+        "quote": "A limpeza facial foi incrível do início ao fim — relaxante e profissional. A minha pele está visivelmente mais limpa, macia e muito mais saudável. A consulta personalizada da Dra. Roberta no final foi incrivelmente detalhada.",
+        "name": "Boris",
+        "role": "Avaliação Google",
+        "avatar": null
+      },
+      {
+        "quote": "Fiz quiropraxia seguida de massagem terapêutica e só tenho elogios! O profissional foi atencioso, explicou cada passo com clareza e transmitiu muita confiança. Saí de lá leve e alinhado. Um verdadeiro alívio para o corpo e mente!",
+        "name": "Bruno Andrade",
+        "role": "Avaliação Google",
+        "avatar": null
+      },
+      {
+        "quote": "A clínica está impecável. O Netto é um excelente profissional — atendeu-me, conversámos, pediu o meu consentimento antes do procedimento. A dor nas costas e na coluna passou tão rapidamente após o ajuste. Super recomendo!",
+        "name": "Nice Salimatu Camará",
+        "role": "Avaliação Google",
+        "avatar": null
+      },
+      {
+        "quote": "Fui fazer uma sessão de quiropraxia e massagem IS com o Dr. Netto. Parece que me tiraram um fardo dos ombros! Uma sessão muito gratificante — explicou todas as etapas e abordou cada ponto que necessitava de intervenção.",
+        "name": "David Silva",
+        "role": "Avaliação Google",
+        "avatar": null
+      }
+    ]
+  },
+
+  "hours": {
+    "badge": "Visite-nos",
+    "titleLine1": "HORÁRIO DE",
+    "titleLine2": "FUNCIONAMENTO",
+    "subtitle": "Estamos aqui quando precisa.",
+    "hoursLabel": "Horário da Clínica",
+    "schedule": [
+      { "day": "Segunda-feira", "hours": "Encerrado" },
+      { "day": "Terça-feira", "hours": "09:30 – 20:00" },
+      { "day": "Quarta-feira", "hours": "09:30 – 20:00" },
+      { "day": "Quinta-feira", "hours": "09:30 – 20:00" },
+      { "day": "Sexta-feira", "hours": "09:30 – 20:00" },
+      { "day": "Sábado", "hours": "08:30 – 14:00" },
+      { "day": "Domingo", "hours": "Encerrado" }
+    ],
+    "note": "Marcações recomendadas. Ligue ou envie mensagem para agendar a sua visita."
+  },
+
+  "pricing": {
+    "badge": "Investimento em Bem-Estar",
+    "titleLine1": "PLANOS",
+    "titleLine2": "DE CUIDADOS",
+    "subtitle": "Preços transparentes para cada fase do seu tratamento.",
+    "popularLabel": "Mais Popular",
+    "cta": "Marcar Agora",
+    "disclaimer": "Os preços podem variar conforme as necessidades individuais de tratamento. Contacte-nos para um orçamento personalizado.",
+    "plans": [
+      {
+        "name": "Sessão Individual",
+        "price": "€45",
+        "period": "por visita",
+        "features": [
+          "Ajuste quiropraxia OU massagem",
+          "Avaliação completa na primeira visita",
+          "Instruções de cuidados personalizadas"
+        ],
+        "popular": false
+      },
+      {
+        "name": "Combo Bem-Estar",
+        "price": "€75",
+        "period": "por visita",
+        "features": [
+          "Ajuste quiropraxia",
+          "Massagem terapêutica IS",
+          "Avaliação postural",
+          "Plano de cuidados de seguimento"
+        ],
+        "popular": true
+      },
+      {
+        "name": "Sessão de Estética",
+        "price": "€60",
+        "period": "por visita",
+        "features": [
+          "Limpeza facial profunda OU sessão laser",
+          "Consulta de cuidados de pele",
+          "Recomendações de produtos",
+          "Orientações pós-tratamento"
+        ],
+        "popular": false
+      }
+    ]
+  },
+
+  "faq": {
+    "badge": "Perguntas",
+    "titleLine1": "PERGUNTAS",
+    "titleLine2": "FREQUENTES",
+    "items": [
+      {
+        "question": "A quiropraxia é segura?",
+        "answer": "Absolutamente. O Netto explica cada passo antes e durante o tratamento. Os pacientes relatam consistentemente sentir-se seguros e confiantes durante todo o processo. Muitos que estavam inicialmente nervosos tornam-se clientes fiéis."
+      },
+      {
+        "question": "O ajuste dói?",
+        "answer": "Não. Os nossos pacientes descrevem a experiência como aliviante, não dolorosa. Pode ouvir um som suave durante o ajuste, mas a técnica é precisa e confortável. A maioria dos pacientes sente alívio imediato."
+      },
+      {
+        "question": "O que esperar na primeira visita?",
+        "answer": "Uma consulta completa onde ouvimos as suas preocupações, avaliamos a sua condição e explicamos o tratamento proposto. O seu consentimento é sempre pedido antes de qualquer procedimento. Sairá com um plano de cuidados claro."
+      },
+      {
+        "question": "Posso combinar serviços de quiropraxia e estética?",
+        "answer": "Sim! Muitos dos nossos clientes usufruem de ambos os serviços numa única visita. Pode começar com um ajuste vertebral com o Netto e seguir com um tratamento facial com a Roberta."
+      },
+      {
+        "question": "Quantas sessões de quiropraxia vou precisar?",
+        "answer": "Depende da sua condição. Alguns pacientes sentem alívio significativo após a primeira sessão. Para problemas crónicos, um plano de tratamento de várias sessões é tipicamente recomendado para resultados duradouros."
+      },
+      {
+        "question": "A depilação a laser é adequada para todos os tipos de pele?",
+        "answer": "Sim. Utilizamos tecnologia de laser díodo que é segura e eficaz para todos os tipos de pele, incluindo tons mais escuros. A Roberta ajusta a temperatura e as definições para o seu conforto e segurança."
+      }
+    ]
+  },
+
+  "contact": {
+    "badge": "Entre em Contacto",
+    "titleLine1": "VISITE A",
+    "titleLine2": "NOSSA CLÍNICA",
+    "body": "Marque a sua consulta hoje. Teremos todo o gosto em recebê-lo na nossa clínica.",
+    "bookCta": "Marcar Consulta",
+    "callCta": "Ligar",
+    "phone": "+351 913 005 574",
+    "email": "",
+    "address": "R. Ten-Cel. Salgueiro Maia 68, 2735-545 Agualva-Cacém",
+    "hours": "Ter-Sex 09:30–20:00, Sáb 08:30–14:00",
+    "mapLink": "https://maps.google.com/?cid=17296575484686215002",
+    "map": {
+      "address": "R. Ten-Cel. Salgueiro Maia 68, 2735-545 Agualva-Cacém",
+      "mapsEmbedUrl": "https://www.google.com/maps?cid=17296575484686215002&output=embed",
+      "mapTitle": "Localização do Instituto Soares"
+    }
+  },
+
+  "appointment": {
+    "title": "Marcar Consulta",
+    "subtitle": "Agende a sua visita em poucos passos simples.",
+    "nameLabel": "O seu nome",
+    "contactLabel": "Email ou telefone",
+    "serviceLabel": "Serviço pretendido",
+    "serviceOptions": [
+      "Ajuste Quiropraxia",
+      "Massagem Terapêutica IS",
+      "Combo Quiro + Massagem",
+      "Limpeza Facial Profunda",
+      "Depilação a Laser",
+      "Microblading",
+      "Extensões de Pestanas",
+      "Consulta de Pele",
+      "Outro"
+    ],
+    "noteLabel": "Notas adicionais (opcional)",
+    "dateLabel": "Escolha uma data",
+    "timeLabel": "Horário preferido",
+    "confirmCta": "Confirmar Marcação",
+    "successTitle": "Marcação Solicitada!",
+    "successBody": "Confirmaremos a sua consulta brevemente por telefone ou mensagem.",
+    "backCta": "Marcar outra",
+    "times": ["09:30", "10:00", "10:30", "11:00", "11:30", "12:00", "12:30", "14:30", "15:00", "15:30", "16:00", "16:30", "17:00", "17:30", "18:00", "18:30", "19:00", "19:30"],
+    "days": ["Dom", "Seg", "Ter", "Qua", "Qui", "Sex", "Sáb"],
+    "months": ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"]
+  },
+
+  "footer": {
+    "brand": "Instituto Soares",
+    "tagline": "Quiropraxia e estética avançada em Agualva-Cacém.",
+    "address": "R. Ten-Cel. Salgueiro Maia 68, 2735-545 Agualva-Cacém",
+    "hours": "Ter-Sex 09:30–20:00, Sáb 08:30–14:00",
+    "phone": "+351 913 005 574",
+    "email": "",
+    "copyright": "Instituto Soares. Todos os direitos reservados.",
+    "bookCta": "Marcar Consulta",
+    "exploreLabel": "Explorar",
+    "hoursLabel": "Horário",
+    "findUsLabel": "Encontre-nos",
+    "madeIn": "Feito em Portugal",
+    "navLinks": [
+      { "id": "about", "label": "Sobre" },
+      { "id": "services", "label": "Serviços" },
+      { "id": "team", "label": "Equipa" },
+      { "id": "contact", "label": "Contacto" }
+    ]
+  },
+
+  "appointmentBar": {
+    "ctaBook": "Marcar Consulta",
+    "ctaCall": "Ligar",
+    "phone": "+351 913 005 574"
+  },
+
   "home": {
-    "title": "Bem-vindo",
-    "description": "Este e o ponto de partida do seu projeto. Edite esta pagina para comecar."
+    "title": "Instituto Soares",
+    "description": "Quiropraxia e estética avançada — o seu bem-estar, o nosso ofício."
   }
 }
