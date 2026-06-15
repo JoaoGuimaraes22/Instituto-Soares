@@ -4,6 +4,7 @@ import "../globals.css";
 import { i18n } from "@/i18n-config";
 import { getDictionary, hasLocale } from "./dictionaries";
 import { notFound } from "next/navigation";
+import DemoBanner from "./_components/demo-banner";
 
 const dmSerif = DM_Serif_Display({
   variable: "--font-dm-serif",
@@ -79,11 +80,11 @@ export async function generateMetadata({
     },
     manifest: "/site.webmanifest",
     robots: {
-      index: true,
-      follow: true,
+      index: false,
+      follow: false,
       googleBot: {
-        index: true,
-        follow: true,
+        index: false,
+        follow: false,
         "max-image-preview": "large",
         "max-snippet": -1,
       },
@@ -138,6 +139,7 @@ export default async function RootLayout({
           }}
         />
         {children}
+        <DemoBanner lang={lang} />
       </body>
     </html>
   );
